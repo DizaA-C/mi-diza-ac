@@ -1,0 +1,102 @@
+/* Estilos Generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fdf6fb;
+    color: #333;
+}
+
+/* Encabezado */
+header {
+    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+    padding: 20px 0;
+    text-align: center;
+}
+
+.container-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.agency-logo {
+    width: 150px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover, .active {
+    background: #fff;
+    color: #ff647f;
+    border-radius: 5px;
+}
+
+/* Sección de Preguntas Frecuentes */
+.faq-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    background: #fde2e4;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.faq-question {
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-answer {
+    display: none;
+    padding-top: 10px;
+}
+
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+/* Pie de Página */
+footer {
+    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+.social-icons img {
+    width: 30px;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}

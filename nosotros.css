@@ -1,0 +1,143 @@
+/* Estilos Globales */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fdf6fb;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+    padding: 20px 0;
+    text-align: center;
+}
+
+.container-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.agency-logo {
+    width: 150px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover, .active {
+    background: #fff;
+    color: #ff647f;
+    border-radius: 5px;
+}
+
+/* Sección Hero */
+.hero {
+    background: url('hero-bg.jpg') center/cover no-repeat;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Sección Sobre Nosotros */
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.about-text {
+    max-width: 50%;
+}
+
+.about-image {
+    width: 40%;
+    border-radius: 10px;
+}
+
+/* Misión y Visión */
+.mission-vision {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 50px;
+    background: #fde2e4;
+}
+
+.mission, .vision {
+    max-width: 400px;
+}
+
+/* Nuestro Equipo */
+.team {
+    text-align: center;
+    padding: 50px;
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 250px;
+}
+
+.team-image {
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Pie de Página */
+footer {
+    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+.social-icons img {
+    width: 30px;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}

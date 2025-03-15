@@ -1,0 +1,194 @@
+/* Estilos Generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fdf6fb;
+    color: #333;
+}
+
+/* Encabezado */
+header {
+    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+}
+
+.container-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.agency-logo {
+    width: 150px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover, .active {
+    background: #fff;
+    color: #ff647f;
+    border-radius: 5px;
+}
+
+/* Sección Redes Sociales */
+.socialmedia-container {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 40px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.socialmedia-container::before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 200px;
+    height: 200px;
+    background: rgba(255, 100, 127, 0.2);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.socialmedia-container::after {
+    content: "";
+    position: absolute;
+    bottom: -50px;
+    right: -50px;
+    width: 150px;
+    height: 150px;
+    background: rgba(250, 208, 196, 0.2);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.socialmedia-container h1 {
+    font-size: 2.8rem;
+    color: #ff647f;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.description {
+    font-size: 1.3rem;
+    color: #444;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.socialmedia-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.socialmedia-card {
+    background: #fde2e4;
+    padding: 25px;
+    border-radius: 15px;
+    width: 320px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    transition: 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+.socialmedia-card:hover {
+    transform: scale(1.08);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.socialmedia-card::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 60px;
+    height: 60px;
+    background: rgba(255, 100, 127, 0.3);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.socialmedia-card img {
+    width: 110px;
+    margin-bottom: 15px;
+}
+
+.socialmedia-card h3 {
+    font-size: 1.5rem;
+    color: #ff647f;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.socialmedia-card p {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* Botón de acción */
+.btn {
+    display: inline-block;
+    background: #ff647f;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    margin-top: 25px;
+    font-size: 1.1rem;
+}
+
+.btn:hover {
+    background: #e63e62;
+    transform: scale(1.05);
+}
+
+/* Pie de Página */
+footer {
+    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+    text-align: center;
+    padding: 20px;
+    color: white;
+    margin-top: 50px;
+    font-size: 1rem;
+}
+
+.social-icons img {
+    width: 35px;
+    margin: 0 12px;
+    transition: 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.3);
+}

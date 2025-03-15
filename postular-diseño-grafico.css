@@ -1,0 +1,244 @@
+/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fdf6fb;
+    color: #333;
+}
+
+/* Encabezado */
+header {
+    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+}
+
+.container-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.agency-logo {
+    width: 150px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover, .active {
+    background: #fff;
+    color: #ff647f;
+    border-radius: 5px;
+}
+
+/* Sección Trabaja con Nosotros */
+.trabaja-container {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 40px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.trabaja-container h1 {
+    font-size: 2.8rem;
+    color: #ff647f;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.trabaja-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.trabaja-card {
+    background: #fde2e4;
+    padding: 25px;
+    border-radius: 15px;
+    width: 320px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    transition: 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+.trabaja-card:hover {
+    transform: scale(1.08);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.trabaja-card h3 {
+    font-size: 1.5rem;
+    color: #ff647f;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.trabaja-card ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* Formulario de postulación */
+.postulacion-form {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.postulacion-form h2 {
+    font-size: 2rem;
+    color: #ff647f;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.postulacion-form input,
+.postulacion-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ffb6c1;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: #fff5f8;
+    transition: 0.3s ease-in-out;
+    outline: none;
+}
+
+.postulacion-form input:focus,
+.postulacion-form textarea:focus {
+    border-color: #ff647f;
+    background: #ffe6eb;
+}
+
+.postulacion-form textarea {
+    height: 120px;
+    resize: none;
+}
+
+/* Estilo para input de archivos */
+.postulacion-form input[type="file"] {
+    display: none;
+}
+
+.file-label {
+    background: #ff647f;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.file-label:hover {
+    background: #e63e62;
+}
+
+/* Botón de envío mejorado */
+.postulacion-form .btn {
+    background: linear-gradient(to right, #ff647f, #ff9a9e);
+    color: white;
+    padding: 14px 28px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    box-shadow: 0 4px 8px rgba(255, 100, 127, 0.3);
+}
+
+.postulacion-form .btn:hover {
+    background: linear-gradient(to right, #e63e62, #ff758c);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(230, 62, 98, 0.4);
+}
+
+/* Estilo mejorado para input de archivos */
+.postulacion-form input[type="file"] {
+    display: none;
+}
+
+.file-label {
+    background: #ff647f;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    display: inline-block;
+    text-align: center;
+    box-shadow: 0 3px 6px rgba(255, 100, 127, 0.3);
+}
+
+.file-label:hover {
+    background: #e63e62;
+    box-shadow: 0 4px 10px rgba(230, 62, 98, 0.4);
+    transform: translateY(-2px);
+}
+
+/* Pie de Página */
+footer {
+    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+    text-align: center;
+    padding: 20px;
+    color: white;
+    margin-top: 50px;
+    font-size: 1rem;
+}
+
+.social-icons img {
+    width: 35px;
+    margin: 0 12px;
+    transition: 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.3);
+}
